@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Good Vibes Formulario</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@1,500&family=Quicksand&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <h1 class="titulo-principal"><strong>GOOD VIBES</strong></h1>
+  <form>
+    <fieldset class="master-fiel-style">
+      <h1 class="titulo"><B>Conte-nos algo positivo que aconteceu com você hoje?</B></h1>
+      <br>
+      <div class="form-div">
+        <div class="labels">
+          <label for="nome" class="labelInput"><b>Nome Completo</b></label>
+        </div>
+        <div class="fields">
+          <input type="text" name="nome" id="nome" class="input-fields" placeholder="Digite seu Nome">
+        </div>
+          <br>
+      </div>
+
+      <div class="form-div">
+        <div class="labels">
+         <label for="email" class="labelInput"><b>Email</b></label>
+        </div>
+        <div class="fields">
+         <input type="email" name="email" id="email" class="input-fields" placeholder="Digite seu email">
+        </div> 
+        <br>
+      </div>
+
+      <div class="form-div">
+        <div class="labels">
+          <label for="number" class="labelInput"><strong>Em uma escala de 1 a 10, quanto isso te deixou feliz?</strong></label>
+        </div>
+        <div class="fields">  
+          <input type="number" name="number" id="number" class="input-fields" placeholder="Digite um número entre 1 e 10" min="1" max="10">
+        </div>  
+          <br> 
+      </div>
+
+       <div class="form-div">
+          <div class="labels">
+           <label for="goste" class="labelInput"><b>Onde isso Aconteceu?</b></label>
+          </div>
+          <div class="fields">
+            <select name="goste" id="goste" class="dropdown">
+              <option disabled selected>Selecione um</option>
+              <option value="casa">Em Casa</option>
+              <option value="trabalho">No Trabalho</option>
+              <option value="rua">Na Rua</option>
+              <option value="outro">Outro Lugar</option>
+            </select>
+          </div>
+       </div>
+
+       <div class="form-div">
+         <div class="labels">
+           <label for="horas" class="labelInput"><b>Em que momento do seu dia aconteceu isso?</b></label>
+        </div>
+          <div class="fields">
+            <ul id="horas" style="list-style: none;">
+              <li class="radio"> 
+                <label>
+                  Manhâ
+                  <input type="radio" name="time-radio" value="1" class="user-selection">
+                </label>
+              </li>
+              <li class="radio">
+                <label>
+                  Tarde
+                  <input type="radio" name="time-radio" value="2" class="user-selection">
+                </label>
+              </li>
+              <li class="radio">
+                Noite
+                <input type="radio" name="time-radio" value="3" class="user-selection">
+              </li>
+            </ul>
+          </div>  
+       </div>
+        
+       <div class="form-div">
+         <div class="labels">
+           <label for="emoçao" class="labelInput"><b>Quais emoçôes você experimentou?</b>
+             <br>
+             (Selecione todas que se aplica)
+           </label>
+        </div>
+          <div class="fields">
+            <ul id="emoçao" style="list-style: none;">
+              <li class="radio">
+                <Label>
+                  <input type="checkbox" name="feeling-check" id="emoçao" value="1" class="user-selection">
+                  <b>Animado</b>
+                </Label>
+              </li>
+              <li class="radio">
+                <Label>
+                  <input type="checkbox" name="feeling-check" id="emoçao" value="2" class="user-selection">
+                  <b>Humilhado</b>
+                </Label>
+              </li>
+              <li class="radio">
+                <Label>
+                  <input type="checkbox" name="feeling-check" id="emoçao" value="3" class="user-selection">
+                  <b>Exaltado</b>
+                </Label>
+              </li>
+              <li class="radio">
+                <Label>
+                  <input type="checkbox" name="feeling-check" id="emoçao" value="4" class="user-selection">
+                  <b>Amor</b>
+                </Label>
+              </li>
+              <li class="radio">
+                <Label>
+                  <input type="checkbox" name="feeling-check" id="emoçao" value="5" class="user-selection">
+                  <b>Entusiasmado</b>
+                </Label>
+              </li>
+            </ul>
+          </div>  
+        </div>
+      <br>
+      <div class="form-div">
+        <div class="labels">
+          <label for="texto" class="labelInput"><b>Descreva sua experiencia positiva?</b></label>
+        </div>  
+        <div class="fields">  
+          <textarea name="event-details" id="event-details" style="height: 50px;resize:vertical; font-family: Open Sans Condensed;" cols="1" rows="1" class="input-fields" placeholder="Enter your experience here..."></textarea>
+        </div>
+      </div>  
+    </fieldset>
+    <div class="botão-div">
+      <button type="submit" id="submit" class="botao"><b>Enviar</b></button>
+    </div>
+  </form>   
+  </main>
+</body>
+</html>
